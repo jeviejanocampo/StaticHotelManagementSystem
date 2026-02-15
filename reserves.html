@@ -1,0 +1,85 @@
+<div class="space-y-4">
+
+    <h1 class="text-2xl font-semibold text-gray-700">Guest Reserves</h1>
+
+   <div class="flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
+
+        <div class="flex gap-2 w-full md:w-auto">
+
+            <input type="text" id="searchInput"
+                placeholder="Search guest..."
+                class="border border-gray-300 rounded-lg px-4 py-2 w-full md:w-72">
+
+            <button onclick="openGuestModal()"
+                class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 whitespace-nowrap">
+                + Add Guest
+            </button>
+
+        </div>
+
+        <select id="statusFilter"
+            class="border border-gray-300 rounded-lg px-4 py-2 w-full md:w-60">
+            <option value="">All Status</option>
+            <option value="Reserved">Reserved</option>
+            <option value="Checked-in">Checked-in</option>
+            <option value="To Check-Out">To Check-Out</option>
+            <option value="Expired">Expired</option>
+        </select>
+
+    </div>
+
+
+    <div class="bg-white shadow rounded-xl overflow-hidden">
+        <div class="max-h-[450px] overflow-y-auto">
+
+            <table class="w-full text-sm border-collapse">
+
+                <thead class="bg-gray-100 sticky top-0">
+                    <tr class="text-left">
+                        <th class="border border-gray-200 px-4 py-2">Guest</th>
+                        <th class="border border-gray-200 px-4 py-2">Room</th>
+                        <th class="border border-gray-200 px-4 py-2">Check-in</th>
+                        <th class="border border-gray-200 px-4 py-2">Check-out</th>
+                        <th class="border border-gray-200 px-4 py-2">Status</th>
+                        <th class="border border-gray-200 px-4 py-2">Update</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tableBody"></tbody>
+
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- ADD GUEST MODAL -->
+<div id="guestModal" class="fixed inset-0 bg-black/40 hidden items-center justify-center z-50">
+
+    <div class="bg-white rounded-xl shadow-xl w-full max-w-md p-6 space-y-4">
+
+        <h2 class="text-xl font-semibold text-gray-700">Add Guest</h2>
+
+        <input type="text" placeholder="Guest Name" class="border w-full px-3 py-2 rounded">
+        <input type="text" placeholder="Room Number" class="border w-full px-3 py-2 rounded">
+        <input type="date" class="border w-full px-3 py-2 rounded">
+        <input type="date" class="border w-full px-3 py-2 rounded">
+
+        <select class="border w-full px-3 py-2 rounded">
+            <option>Reserved</option>
+            <option>Checked-in</option>
+            <option>To Check-Out</option>
+        </select>
+
+        <div class="flex justify-end gap-2 pt-2">
+            <button onclick="closeGuestModal()" class="px-4 py-2 rounded bg-gray-200 hover:bg-gray-300">
+                Cancel
+            </button>
+            <button class="px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700">
+                Save
+            </button>
+        </div>
+
+    </div>
+</div>

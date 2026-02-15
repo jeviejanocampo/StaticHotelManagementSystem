@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+
+   <div class="flex items-start justify-between">
+
+        <div>
+            <h1 class="text-2xl font-semibold text-gray-700">Welcome Tourism and Hospitality Students</h1>
+            <p class="text-gray-500 mt-2">Select a menu from the sidebar.</p>
+        </div>
+
+        <div class="text-right">
+            <h2 id="clock" class="text-xl font-semibold text-black-700">Time: 10:00 AM</h2>
+            <p id="date" class="text-gray-500 mt-1">February 15, 2026</p>
+        </div>
+
+    </div>
+
+   
+
+
+
+
+    <!-- Horizontal Sliding Cards -->
+    <div class="mt-6 overflow-x-auto">
+        <div class="flex gap-4 min-w-max pb-2">
+
+            <!-- Card -->
+            <div class="flex items-center gap-4 bg-white shadow rounded-xl px-6 py-4 min-w-[220px]">
+                <i data-feather="users" class="w-8 h-8 text-blue-500"></i>
+                <div>
+                    <p class="text-sm text-gray-500">Guests</p>
+                    <h2 class="text-lg font-semibold text-gray-700">120</h2>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4 bg-white shadow rounded-xl px-6 py-4 min-w-[220px]">
+                <i data-feather="calendar" class="w-8 h-8 text-green-500"></i>
+                <div>
+                    <p class="text-sm text-gray-500">Reservations</p>
+                    <h2 class="text-lg font-semibold text-gray-700">45</h2>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4 bg-white shadow rounded-xl px-6 py-4 min-w-[220px]">
+                <i data-feather="home" class="w-8 h-8 text-purple-500"></i>
+                <div>
+                    <p class="text-sm text-gray-500">Rooms</p>
+                    <h2 class="text-lg font-semibold text-gray-700">30</h2>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4 bg-white shadow rounded-xl px-6 py-4 min-w-[220px]">
+                <i data-feather="dollar-sign" class="w-8 h-8 text-yellow-500"></i>
+                <div>
+                    <p class="text-sm text-gray-500">Revenue</p>
+                    <h2 class="text-lg font-semibold text-gray-700">₱25,000</h2>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4 bg-white shadow rounded-xl px-6 py-4 min-w-[220px]">
+                <i data-feather="bell" class="w-8 h-8 text-red-500"></i>
+                <div>
+                    <p class="text-sm text-gray-500">Alerts</p>
+                    <h2 class="text-lg font-semibold text-gray-700">8</h2>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4 bg-white shadow rounded-xl px-6 py-4 min-w-[220px]">
+                <i data-feather="check-circle" class="w-8 h-8 text-teal-500"></i>
+                <div>
+                    <p class="text-sm text-gray-500">Check-ins</p>
+                    <h2 class="text-lg font-semibold text-gray-700">22</h2>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4 bg-white shadow rounded-xl px-6 py-4 min-w-[220px]">
+                <i data-feather="log-out" class="w-8 h-8 text-pink-500"></i>
+                <div>
+                    <p class="text-sm text-gray-500">Check-outs</p>
+                    <h2 class="text-lg font-semibold text-gray-700">19</h2>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- 2nd Layer - Image Templates -->
+    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Card Item -->
+        <div class="bg-white shadow rounded-xl overflow-hidden">
+            <img src="./images/room2.jpg" class="w-full h-48 object-cover">
+
+            <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Deluxe Room</h2>
+
+                <p class="text-[8px] text-gray-500 mt-1">
+                    Comfortable stay with city view and free breakfast included.
+                </p>
+
+                <p class="text-[12px] text-black font-medium mt-2">
+                    ₱3,500 / night
+                </p>
+            </div>
+        </div>
+
+        <!-- Duplicate Template Example -->
+        <div class="bg-white shadow rounded-xl overflow-hidden">
+            <img src="./images/room1.jpg" class="w-full h-48 object-cover">
+
+            <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Beach Resort Room</h2>
+
+                <p class="text-[8px] text-gray-500 mt-1">
+                    Relaxing beachside accommodation with premium amenities.
+                </p>
+
+                <p class="text-[12px] text-black font-medium mt-2">
+                    ₱5,200 / night
+                </p>
+            </div>
+        </div>
+
+        <div class="bg-white shadow rounded-xl overflow-hidden">
+            <img src="./images/room3.jpg" class="w-full h-48 object-cover">
+
+            <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Executive Suite</h2>
+
+                <p class="text-[8px] text-gray-500 mt-1">
+                    Spacious suite ideal for business and VIP guests.
+                </p>
+
+                <p class="text-[12px] text-black font-medium mt-2">
+                    ₱8,000 / night
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Card Item -->
+        <div class="bg-white shadow rounded-xl overflow-hidden">
+            <img src="./images/room4.jpg" class="w-full h-48 object-cover">
+
+            <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Cozy Study Room</h2>
+
+                <p class="text-[8px] text-gray-500 mt-1">
+                    Comfortable stay with city view and free breakfast included.
+                </p>
+
+                <p class="text-[12px] text-black font-medium mt-2">
+                    ₱7,500 / night
+                </p>
+            </div>
+        </div>
+
+        <!-- Duplicate Template Example -->
+        <div class="bg-white shadow rounded-xl overflow-hidden">
+            <img src="./images/room5.jpg" class="w-full h-48 object-cover">
+
+            <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">xzo Coz  Room</h2>
+
+                <p class="text-[8px] text-gray-500 mt-1">
+                    Relaxing beachside accommodation with premium amenities.
+                </p>
+
+                <p class="text-[12px] text-black font-medium mt-2">
+                    ₱9,200 / night
+                </p>
+            </div>
+        </div>
+
+        <div class="bg-white shadow rounded-xl overflow-hidden">
+            <img src="./images/room6.jpg" class="w-full h-48 object-cover">
+
+            <div class="p-4">
+                <h2 class="text-lg font-semibold text-gray-800">Diverse Suite</h2>
+
+                <p class="text-[8px] text-gray-500 mt-1">
+                    Spacious suite ideal for business and VIP guests.
+                </p>
+
+                <p class="text-[12px] text-black font-medium mt-2">
+                    ₱12,000 / night
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+   
+
+
+       
+    
+</body>
+</html>
