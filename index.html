@@ -49,10 +49,16 @@
                 <span class="text-sm mt-1 text-left w-full">Reports</span>
             </button>
 
-            <button onclick="loadPage('notifications.html')" class="w-full flex flex-col items-start justify-center py-4 px-6 text-gray-700 hover:bg-gray-200 transition">
+           <button onclick="loadPage('notifications.html')" class="w-full flex flex-col items-start justify-center py-4 px-6 text-gray-700 hover:bg-gray-200 transition relative">
                 <i data-feather="bell" class="w-6 h-6"></i>
                 <span class="text-sm mt-1 text-left w-full">Notifications</span>
+                
+                <!-- Notification Badge -->
+                <span class="absolute top-2 right-4 bg-red-600 text-white text-xs font-semibold px-2 py-0.5 rounded-full">
+                    +67
+                </span>
             </button>
+
 
             <button onclick="loadPage('users.html')" class="w-full flex flex-col items-start justify-center py-4 px-6 text-gray-700 hover:bg-gray-200 transition">
                 <i data-feather="users" class="w-6 h-6"></i>
