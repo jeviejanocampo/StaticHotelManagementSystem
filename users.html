@@ -1,0 +1,177 @@
+<div class="bg-white rounded-xl shadow p-6">
+
+  <!-- Header -->
+  <h2 class="text-lg font-semibold text-gray-800 mb-4">Users</h2>
+
+  <!-- Table -->
+  <div class="overflow-x-auto">
+    <table class="min-w-full border border-gray-200">
+      <thead class="bg-gray-50">
+        <tr>
+          <th class="border-b px-4 py-2 text-left text-sm font-medium text-gray-600">Profile</th>
+          <th class="border-b px-4 py-2 text-left text-sm font-medium text-gray-600">Name</th>
+          <th class="border-b px-4 py-2 text-left text-sm font-medium text-gray-600">User ID</th>
+          <th class="border-b px-4 py-2 text-left text-sm font-medium text-gray-600">Email</th>
+          <th class="border-b px-4 py-2 text-left text-sm font-medium text-gray-600">Actions</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white divide-y divide-gray-100">
+        <!-- User 1 -->
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">
+            <img src="./images/cat2.webp" class="object-cover" style="width:120px; height:120px;" alt="Profile">
+          </td>
+          <td class="border px-4 py-2 text-sm">Juan Dela Cruz</td>
+          <td class="border px-4 py-2 text-sm">U101</td>
+          <td class="border px-4 py-2 text-sm">juan@example.com</td>
+          <td class="border px-4 py-2 text-sm">
+            <button onclick="openUserModal('Juan Dela Cruz', 'U101', 'juan@example.com')" class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700">View</button>
+          </td>
+        </tr>
+        <!-- User 2 -->
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">
+            <img src="./images/cat3.webp" class="object-cover" style="width:120px; height:120px;" alt="Profile">
+          </td>
+          <td class="border px-4 py-2 text-sm">Maria Santos</td>
+          <td class="border px-4 py-2 text-sm">U102</td>
+          <td class="border px-4 py-2 text-sm">maria@example.com</td>
+          <td class="border px-4 py-2 text-sm">
+            <button onclick="openUserModal('Maria Santos', 'U102', 'maria@example.com')" class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700">View</button>
+          </td>
+        </tr>
+        <!-- User 3 -->
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">
+            <img src="./images/cat5.jpg" class="object-cover" style="width:120px; height:120px;" alt="Profile">
+          </td>
+          <td class="border px-4 py-2 text-sm">Kevin Tan</td>
+          <td class="border px-4 py-2 text-sm">U103</td>
+          <td class="border px-4 py-2 text-sm">kevin@example.com</td>
+          <td class="border px-4 py-2 text-sm">
+            <button onclick="openUserModal('Kevin Tan', 'U103', 'kevin@example.com')" class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700">View</button>
+          </td>
+        </tr>
+        <!-- User 4 -->
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">
+            <img src="./images/cat1.webp" class="object-cover" style="width:120px; height:120px;" alt="Profile">
+          </td>
+          <td class="border px-4 py-2 text-sm">Angela Reyes</td>
+          <td class="border px-4 py-2 text-sm">U104</td>
+          <td class="border px-4 py-2 text-sm">angela@example.com</td>
+          <td class="border px-4 py-2 text-sm">
+            <button onclick="openUserModal('Angela Reyes', 'U104', 'angela@example.com')" class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700">View</button>
+          </td>
+        </tr>
+        <!-- User 5 -->
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">
+            <img src="./images/cat7.jpg" class="object-cover" style="width:120px; height:120px;" alt="Profile">
+          </td>
+          <td class="border px-4 py-2 text-sm">James Lee</td>
+          <td class="border px-4 py-2 text-sm">U105</td>
+          <td class="border px-4 py-2 text-sm">james@example.com</td>
+          <td class="border px-4 py-2 text-sm">
+            <button onclick="openUserModal('James Lee', 'U105', 'james@example.com')" class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700">View</button>
+          </td>
+        </tr>
+        <!-- User 6 -->
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">
+            <img src="./images/cat2.webp" class="object-cover" style="width:120px; height:120px;" alt="Profile">
+          </td>
+          <td class="border px-4 py-2 text-sm">Anna Cruz</td>
+          <td class="border px-4 py-2 text-sm">U106</td>
+          <td class="border px-4 py-2 text-sm">anna@example.com</td>
+          <td class="border px-4 py-2 text-sm">
+            <button onclick="openUserModal('Anna Cruz', 'U106', 'anna@example.com')" class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700">View</button>
+          </td>
+        </tr>
+        <!-- User 7 -->
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">
+            <img src="./images/cat8.jpg" class="object-cover" style="width:120px; height:120px;" alt="Profile">
+          </td>
+          <td class="border px-4 py-2 text-sm">Mark Lim</td>
+          <td class="border px-4 py-2 text-sm">U107</td>
+          <td class="border px-4 py-2 text-sm">mark@example.com</td>
+          <td class="border px-4 py-2 text-sm">
+            <button onclick="openUserModal('Mark Lim', 'U107', 'mark@example.com')" class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700">View</button>
+          </td>
+        </tr>
+        <!-- User 8 -->
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">
+            <img src="./images/cat5.jpg" class="object-cover" style="width:120px; height:120px;" alt="Profile">
+          </td>
+          <td class="border px-4 py-2 text-sm">Sarah Kim</td>
+          <td class="border px-4 py-2 text-sm">U108</td>
+          <td class="border px-4 py-2 text-sm">sarah@example.com</td>
+          <td class="border px-4 py-2 text-sm">
+            <button onclick="openUserModal('Sarah Kim', 'U108', 'sarah@example.com')" class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700">View</button>
+          </td>
+        </tr>
+        <!-- User 9 -->
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">
+            <img src="./images/cat5.jpg" class="object-cover" style="width:120px; height:120px;" alt="Profile">
+          </td>
+          <td class="border px-4 py-2 text-sm">Paolo Ramos</td>
+          <td class="border px-4 py-2 text-sm">U109</td>
+          <td class="border px-4 py-2 text-sm">paolo@example.com</td>
+          <td class="border px-4 py-2 text-sm">
+            <button onclick="openUserModal('Paolo Ramos', 'U109', 'paolo@example.com')" class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700">View</button>
+          </td>
+        </tr>
+        <!-- User 10 -->
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">
+            <img src="./images/cat5.jpg" class="object-cover" style="width:120px; height:120px;" alt="Profile">
+          </td>
+          <td class="border px-4 py-2 text-sm">Carla Gomez</td>
+          <td class="border px-4 py-2 text-sm">U110</td>
+          <td class="border px-4 py-2 text-sm">carla@example.com</td>
+          <td class="border px-4 py-2 text-sm">
+            <button onclick="openUserModal('Carla Gomez', 'U110', 'carla@example.com')" class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700">View</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<!-- User Detail Modal -->
+<div id="userModal" class="fixed inset-0 bg-black/40 hidden items-center justify-center z-50">
+  <div class="bg-white rounded-xl shadow-xl w-full max-w-md p-6 space-y-4">
+    <h2 class="text-xl font-semibold text-gray-800">User Details</h2>
+    <div class="flex items-center gap-4">
+      <img id="modalProfile" src="https://via.placeholder.com/80" class="w-20 h-20 rounded-full" alt="Profile">
+      <div>
+        <p><strong>Name:</strong> <span id="modalName"></span></p>
+        <p><strong>User ID:</strong> <span id="modalID"></span></p>
+        <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+      </div>
+    </div>
+    <div class="flex justify-end">
+      <button onclick="closeUserModal()" class="px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Script -->
+<script>
+function openUserModal(name, id, email){
+  document.getElementById("modalName").innerText = name;
+  document.getElementById("modalID").innerText = id;
+  document.getElementById("modalEmail").innerText = email;
+  document.getElementById("userModal").classList.remove("hidden");
+  document.getElementById("userModal").classList.add("flex");
+}
+
+function closeUserModal(){
+  document.getElementById("userModal").classList.remove("flex");
+  document.getElementById("userModal").classList.add("hidden");
+}
+</script>

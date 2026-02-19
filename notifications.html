@@ -1,0 +1,149 @@
+<div class="bg-white rounded-xl shadow p-6">
+
+  <!-- Header + Search -->
+  <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4 gap-2">
+    <h2 class="text-lg font-semibold text-gray-800">Guest Notifications</h2>
+
+    <!-- Search Input -->
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search notifications..."
+      class="border border-gray-300 rounded-md px-3 py-1 text-sm w-full md:w-64"
+    />
+  </div>
+
+  <!-- Table -->
+  <div class="overflow-x-auto">
+    <table class="min-w-full border border-gray-200">
+      <thead class="bg-gray-50">
+        <tr>
+          <th class="border-b px-4 py-2 text-left text-sm font-medium text-gray-600">Date</th>
+          <th class="border-b px-4 py-2 text-left text-sm font-medium text-gray-600">Guest Name</th>
+          <th class="border-b px-4 py-2 text-left text-sm font-medium text-gray-600">Guest ID</th>
+          <th class="border-b px-4 py-2 text-left text-sm font-medium text-gray-600">Type</th>
+          <th class="border-b px-4 py-2 text-left text-sm font-medium text-gray-600">Message</th>
+          <th class="border-b px-4 py-2 text-left text-sm font-medium text-gray-600">Status</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody" class="bg-white divide-y divide-gray-100">
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">2026-02-19</td>
+          <td class="border px-4 py-2 text-sm">Juan Dela Cruz</td>
+          <td class="border px-4 py-2 text-sm">101</td>
+          <td class="border px-4 py-2 text-sm">Check-in</td>
+          <td class="border px-4 py-2 text-sm">Your room is ready.</td>
+          <td class="border px-4 py-2 text-sm">
+            <span class="px-2 py-1 rounded text-xs font-medium bg-red-100 text-red-700">Unread</span>
+          </td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">2026-02-18</td>
+          <td class="border px-4 py-2 text-sm">Maria Santos</td>
+          <td class="border px-4 py-2 text-sm">102</td>
+          <td class="border px-4 py-2 text-sm">Reservation</td>
+          <td class="border px-4 py-2 text-sm">Reservation confirmed.</td>
+          <td class="border px-4 py-2 text-sm">
+            <span class="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-700">Read</span>
+          </td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">2026-02-17</td>
+          <td class="border px-4 py-2 text-sm">Kevin Tan</td>
+          <td class="border px-4 py-2 text-sm">103</td>
+          <td class="border px-4 py-2 text-sm">Payment</td>
+          <td class="border px-4 py-2 text-sm">Payment received.</td>
+          <td class="border px-4 py-2 text-sm">
+            <span class="px-2 py-1 rounded text-xs font-medium bg-red-100 text-red-700">Unread</span>
+          </td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">2026-02-16</td>
+          <td class="border px-4 py-2 text-sm">Angela Reyes</td>
+          <td class="border px-4 py-2 text-sm">104</td>
+          <td class="border px-4 py-2 text-sm">Check-out</td>
+          <td class="border px-4 py-2 text-sm">Thank you for staying.</td>
+          <td class="border px-4 py-2 text-sm">
+            <span class="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-700">Read</span>
+          </td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">2026-02-15</td>
+          <td class="border px-4 py-2 text-sm">James Lee</td>
+          <td class="border px-4 py-2 text-sm">105</td>
+          <td class="border px-4 py-2 text-sm">Reservation</td>
+          <td class="border px-4 py-2 text-sm">Reservation cancelled.</td>
+          <td class="border px-4 py-2 text-sm">
+            <span class="px-2 py-1 rounded text-xs font-medium bg-red-100 text-red-700">Unread</span>
+          </td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">2026-02-14</td>
+          <td class="border px-4 py-2 text-sm">Anna Cruz</td>
+          <td class="border px-4 py-2 text-sm">106</td>
+          <td class="border px-4 py-2 text-sm">Promotion</td>
+          <td class="border px-4 py-2 text-sm">Get 10% off next stay.</td>
+          <td class="border px-4 py-2 text-sm">
+            <span class="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-700">Read</span>
+          </td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">2026-02-13</td>
+          <td class="border px-4 py-2 text-sm">Mark Lim</td>
+          <td class="border px-4 py-2 text-sm">107</td>
+          <td class="border px-4 py-2 text-sm">Check-in</td>
+          <td class="border px-4 py-2 text-sm">Your room is ready.</td>
+          <td class="border px-4 py-2 text-sm">
+            <span class="px-2 py-1 rounded text-xs font-medium bg-red-100 text-red-700">Unread</span>
+          </td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">2026-02-12</td>
+          <td class="border px-4 py-2 text-sm">Sarah Kim</td>
+          <td class="border px-4 py-2 text-sm">108</td>
+          <td class="border px-4 py-2 text-sm">Payment</td>
+          <td class="border px-4 py-2 text-sm">Payment failed.</td>
+          <td class="border px-4 py-2 text-sm">
+            <span class="px-2 py-1 rounded text-xs font-medium bg-red-100 text-red-700">Unread</span>
+          </td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">2026-02-11</td>
+          <td class="border px-4 py-2 text-sm">Paolo Ramos</td>
+          <td class="border px-4 py-2 text-sm">109</td>
+          <td class="border px-4 py-2 text-sm">Check-out</td>
+          <td class="border px-4 py-2 text-sm">Invoice sent via email.</td>
+          <td class="border px-4 py-2 text-sm">
+            <span class="px-2 py-1 rounded text-xs font-medium bg-green-100 text-green-700">Read</span>
+          </td>
+        </tr>
+        <tr class="hover:bg-gray-50">
+          <td class="border px-4 py-2 text-sm">2026-02-10</td>
+          <td class="border px-4 py-2 text-sm">Carla Gomez</td>
+          <td class="border px-4 py-2 text-sm">110</td>
+          <td class="border px-4 py-2 text-sm">Promotion</td>
+          <td class="border px-4 py-2 text-sm">Free breakfast included!</td>
+          <td class="border px-4 py-2 text-sm">
+            <span class="px-2 py-1 rounded text-xs font-medium bg-red-100 text-red-700">Unread</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<!-- Search Script -->
+<script>
+const searchInput = document.getElementById("searchInput");
+const tableBody = document.getElementById("tableBody");
+
+searchInput.addEventListener("keyup", function() {
+  const value = this.value.toLowerCase();
+  const rows = tableBody.querySelectorAll("tr");
+
+  rows.forEach(row => {
+    row.style.display = row.innerText.toLowerCase().includes(value) ? "" : "none";
+  });
+});
+</script>
