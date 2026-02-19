@@ -220,6 +220,10 @@ async function loadPage(page) {
 
     feather.replace();
 
+    if (page === "reports.html") {
+        google.charts.setOnLoadCallback(drawReportsChart);
+    }
+
     // RESERVES TABLE DATA
     const tableBody = document.getElementById("tableBody");
 
@@ -326,6 +330,7 @@ function closeGuestModal(){
     if(modal) modal.classList.remove("flex"), modal.classList.add("hidden");
 }
 
+
 </script>
 
 <script>
@@ -352,6 +357,52 @@ function closeGuestModal(){
     heartbeat();
 
 </script>
+
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script>
+  console.log("🔵 Google Charts loader loaded");
+
+  google.charts.load('current', { packages: ['corechart'] });
+
+  function drawReportsChart() {
+    console.log("🟢 drawReportsChart() called");
+
+    const container = document.getElementById("curve_chart");
+
+    if (!container) {
+      console.warn("⚠️ curve_chart not found (page not reports yet)");
+      return;
+    }
+
+    const data = google.visualization.arrayToDataTable([
+      ['Day', 'Occupancy Rate', 'Guests'],
+      ['Mon', 70, 120],
+      ['Tue', 75, 135],
+      ['Wed', 78, 150],
+      ['Thu', 80, 165],
+      ['Fri', 85, 190],
+      ['Sat', 90, 230],
+      ['Sun', 88, 210]
+    ]);
+
+    const options = {
+      title: 'Weekly Hotel Performance',
+      curveType: 'function',
+      legend: { position: 'bottom' },
+      chartArea: {
+        width: '85%',
+        height: '70%'
+      }
+    };
+
+    const chart = new google.visualization.LineChart(container);
+    chart.draw(data, options);
+
+    console.log("✅ Chart rendered successfully");
+  }
+</script>
+
 
 </body>
 </html>
